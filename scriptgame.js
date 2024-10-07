@@ -66,6 +66,7 @@ function age() {
 }
 age();
 
+
 function production() {
 const a = Number(prompt('Введите 1 число'));
 const b = Number(prompt('Введите 2 число'));
