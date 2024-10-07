@@ -12,7 +12,7 @@
   background-color: rgb(225, 255, 143);
   background-image: url(./img/Group\ 1597880566.png), url(./img/star\ top.png), url(./img/star\ bottom.png);
   background-repeat: no-repeat;
-  background-position: 210% 80%, 5% 5%, 70% 80%;
+  background-position: calc(100% + 500px) -410px, 5% 5%, 70% 80%;
   padding-top: 69px;
   padding-bottom: 151px;
 }
