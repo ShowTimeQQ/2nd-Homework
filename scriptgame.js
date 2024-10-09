@@ -1,32 +1,34 @@
 
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-  
-  function starGame() {  
-    const randomInt = getRandomInt(0,100);
-    alert(randomInt);
-    let a = Number(prompt('Угадай число от 1 до 100'));
-    if (isNaN(a)) {
-      alert("Введено не число")
-    } else if (a === randomInt) {
-      alert('Угадал'); 
-    } else if (randomInt <= 50) {
-      alert ('Это число меньше 51');
-    } else {
-      alert ('это число больше 50');
-    } 
-  }
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-  function min(a, b) {
-    if (a < b) {
-      return a ;
-    } else {
-      return b;
+function starGame() {  
+  const randomInt = getRandomInt(0,100);
+  while(true) {
+    const a = prompt('Введите число')
+    if(a < randomInt) { 
+        alert('У меня больше')
+        continue
     }
-  
+    if(a > randomInt) {
+        alert('У меня меньше')
+        continue
+    }
+    alert('Угадал')
+    break;
+}
+}
+
+function min(a, b) {
+if (a < b) {
+  return a ;
+} else {
+return b;
+ }
+
   }
   console.log(min(4, 7));
 
@@ -63,6 +65,7 @@ function age() {
   }
 }
 age();
+
 
 function production() {
 const a = Number(prompt('Введите 1 число'));

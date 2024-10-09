@@ -30,6 +30,7 @@ let b = 2;
 let x = 9 / 2;
 console.log(x);
 
+
 let num = 1;
 num += 5;
 num -= 3;
