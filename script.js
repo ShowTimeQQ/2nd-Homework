@@ -1,34 +1,34 @@
 let age = 10;
-alert(age);
+console.log(age);
 let up = 20;
-alert(up);
+console.log(up);
 let date = ('Дата выхода Iphone1 20.06.2007');
-alert(date);
+console.log(date);
 let namejs = ('создатель js Brendan Eich');
-alert(namejs);
+console.log(namejs);
 
 let addition = 10;
 let additionup = 2;
 let result = addition + additionup ;
-alert(result);
+console.log(result);
 
 let difference = 10;
 let differencebot = 2;
 let result2 = difference - differencebot;
-alert(result2);
+console.log(result2);
 
 let divide = 10;
 let dividebot = 2;
 let result3 = divide / dividebot;
-alert(result3);
+console.log(result3);
 
 let i = 2**5;
-alert(i);
+console.log(i);
 
 let a = 9;
 let b = 2;
 let x = 9 / 2;
-alert(x);
+console.log(x);
 
 let num = 1;
 num += 5;
@@ -37,95 +37,156 @@ num *= 7;
 num /= 3;
 num++;
 num--;
-alert(num);
+console.log(num);
 
 let age1 = Number(prompt('Сколько Вам лет?'));
-alert(age1);
+console.log(age1);
 
 const user = {
     name: 'Mickey',
     age: 37 ,
     Boolean: "isAdmin"
- };
+ }
  
  let info = prompt("Что вы хотите узнать о пользователе?", "name");
  
 console.log(user[info]); 
 
 
-let privet = 'Привет,';
-let name3 =String(prompt('Как Вас зовут?'));
-let sign = '!';
-result4 = privet + name3 + sign;
-alert( result4 );
-
 let info10 = prompt('Как твоё имя ?');
-alert(` Привет, ${info10}!`);
+console.log(` Привет, ${info10}!`);
 
 let d = String(prompt('Введите пароль '));
 const c = "xxx"
 if (c === d) {
-    alert('Пароль введен верно');
+    console.log('Пароль введен верно');
 } else {
-   alert('Пароль введен не верно');
+    console.log('Пароль введен не верно');
 }
 
-let z = Number(prompt('Введите число '));
-let y = Number(prompt('Введите второе число '));
-if (z >=100 || y <=100) {
-    alert('Верно');
+let time = Number(prompt('Введите число '));
+if (time >=0 && time <=10) {
+    console.log('Верно');
 } else {
-    alert('Неверно');
-    
+    console.log('Неверно');
+}
+
+let z = Number(prompt("Введите число"));
+let y = Number(prompt("Введите второе число"));
+if (z >= 100 || y >= 100) {
+    console.log('Верно');
+} else {
+    console.log('Неверно');
 }
 
 let q = '2';
 let w = '3';
-alert(Number(q) + Number(w));
+console.log(Number(q) + Number(w));
 
 let month = String(prompt('Введите месяц '));
 month = month.toLocaleLowerCase();
 switch (month) {
     case 'january':
-        alert('Winter');
+        console.log('Winter');
     break;
     case 'february':
-        alert('Winter');
+        console.log('Winter');
     break;
     case 'march':
-        alert('spring');
+        console.log('spring');
     break;
     case 'april':
-        alert('spring');
+        console.log('spring');
     break;
     case 'may':
-        alert('spring');
+        console.log('spring');
     break;
     case 'june':
-        alert('Summer');
+        console.log('Summer');
     break;
     case 'jule':
-        alert('Summer');
+        console.log('Summer');
     break;
     case 'august':
-        alert('Summer');
+        console.log('Summer');
     break;
     case 'september':
-        alert('autumn');
+        console.log('autumn');
     break;
     case 'october':
-        alert('autumn');
+        console.log('autumn');
     break;
     case 'november':
-        alert('autumn');
+        console.log('autumn');
     break;
     case 'december':
-        alert('winter');
+        console.log('winter');
     break;
-
-    default: alert('Неверное значение');
+    default: console.log('Неверное значение');
         break;
 }
+
+
+let p = 0;
+while (p < 2) {
+    console.log('Привет');
+    p++;
+}
+
+let j = 1;
+while (j <= 5) {
+    console.log(j);
+   j++;
+}
+
+
+let l = 7;
+while (l <= 22) {
+    console.log(l);
+    l++;
+}
+
+
+const obj = {
+Kol : '200',
+Vas : '300',
+Pet : '400'
+ }
+ 
+ for (let key in obj) {
+    console.log(`${key}: ${obj[key]} $`);
+ }
+
+ let m = 1000;
+ let mun = 0;
+ while ( m >= 50) {
+    m /= 2;
+    console.log(m);
+    mun++;
+ }
+ console.log(`Количество циклов ${mun}`);
+
+
+ let dayFriday = 3;
+ let allDay = 31;
+ for (let i = dayFriday; i < allDay; i += 7) {
+ console.log(`Сегодня пятница, ${i}-е число.Подготовь отчет.`);
+ }
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
 
 
 

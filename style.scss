@@ -49,6 +49,7 @@
     line-height: 32px;
     text-align: left;
     padding-bottom: 48px;
+    max-width: 720px;
     
     }
     
@@ -101,7 +102,7 @@
     text-align: left;
     color: rgba(32, 32, 39, 1);
     }
-    .game_box{
+    .game-box{
     background: rgba(32, 32, 39, 1);
     background-image: url(./img/Star\ 1.png),url(./img/star\ game.png);
     background-repeat: no-repeat;
@@ -122,10 +123,10 @@
     gap: 32px;
     
     }
-    .game__about{
+    .about-g{
         padding-top: 94px;
     }
-    .game__about_text {
+    .title-g{
         width: 314px;
         height: 78px;
         font-family: Montserrat;
@@ -138,7 +139,7 @@
     
         
     }
-    .text-bottom{
+    .text-bott{
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 400;
@@ -250,8 +251,21 @@
         background-color: #fff;
         border-radius: 60px;
         display: flex;
+    }
+    .cart3 {
+        height: 500px;
+        background-color: #fff;
+        border-radius: 60px;
+        display: flex;
+        flex-direction: row-reverse;
         justify-content: space-between;
-    
+    }
+    .cart4 {
+        height: 500px;
+        background-color: #fff;
+        border-radius: 60px;
+        display: flex;
+        justify-content: space-between;
     }
     
     .img-mini{
