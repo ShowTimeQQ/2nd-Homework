@@ -1,14 +1,18 @@
-
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
+
 }
 
 function starGame() {  
   const randomInt = getRandomInt(0,100);
   while(true) {
     const a = prompt('Введите число')
+    if (isNaN(a)) {
+      alert('Начните игру снова и введите число от 1 до 100 Спасибо');
+      break;
+    }
     if(a < randomInt) { 
         alert('У меня больше')
         continue
@@ -64,7 +68,7 @@ function age() {
     alert('Добро пожаловать!');
   }
 }
-age();
+ age();
 
 
 function production() {
