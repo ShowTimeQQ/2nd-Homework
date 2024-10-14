@@ -27,7 +27,7 @@ alert(result);
 const j = eval(result);
 const userAnswer = +prompt("посчитай и ввведи ответ");
 if (!isNaN(userAnswer) && userAnswer === j) {
-   alert("верный ответ")
+   alert("верный ответ");
 }else {
     alert("Ответ не верный")
 }
@@ -60,7 +60,7 @@ const work = [];
 for (let i=0 ; i<3; i++){
     const work2 =[];
     for(let i=0 ; i<3; i++) {
-        work2.push[1]
+        work2.push(1);
 }
 work.push(work2);
 }
@@ -73,7 +73,8 @@ console.log(arr3);
 //6
 let product = [9, 8, 7, 'a', 6, 5];
 product.sort();
-console.log(product);
+const onlyNumber =product.filter(item=>item > 9 );
+console.log(onlyNumber);
 
 //7 
 const product2 = [9, 8, 7, 6, 5];
