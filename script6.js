@@ -73,7 +73,7 @@ console.log(arr3);
 //6
 let product = [9, 8, 7, 'a', 6, 5];
 product.sort();
-const onlyNumber =product.filter(item=>item > 9 );
+const onlyNumber = product.filter(item => item <= 9);
 console.log(onlyNumber);
 
 //7 
