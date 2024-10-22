@@ -41,7 +41,7 @@ function Victorina() {
     }
     alert('Кол-во правильгых ответов ' + count);
 }
-Victorina();
+
 
 
 
