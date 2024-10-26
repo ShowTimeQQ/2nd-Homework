@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <!-- Задание 1 -->
+<style>
+ .description {
+ color:white; 
+} 
+.description_press {
+    color: black;
+}
+
+.change-text {
+   color: green;
+}
+</style>
+<body>
+    <h1 class=" description description_press">Hello , World</h1>
+    <button id ="btn">УДАЛИТЬ</button>
+    <script>
+   const btnEl = document.querySelector('#btn');
+   const descriptionEl = document.querySelector('.description');
+
+   btnEl.addEventListener('click', function (e) {;
+   
+    descriptionEl.classList.toggle ('description_press');
+   });
+
+    </script>
+
+<!-- 2 -->
+<h1> Change Color Text</h1>
+<p class = "change-text">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+<button class = "pressForChange">Press</button>
+    <script>
+      changeTextEL = document.querySelector ('.change-text') ;
+      pressChangeEL = document.querySelector ('.pressForChange');
+      
+      pressChangeEL.addEventListener('click', function (e) {
+        changeTextEL.style.color = 'red';
+      });
+    </script>
+
+<!-- 3 -->
+ <h1> Change Text</h1>
+<p class="new-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, odio!</p>
+<button class="change">Change</button>
+
+<script>
+    textEl = document.querySelector ('.new-text');
+    changeEl = document.querySelector('.change')
+
+   changeEl.addEventListener('click', function (e) {
+    textEl.textContent = 'Новый текст после клика';
+    });
+</script>
+
+<!-- 4 -->
+<p class="descriptionText">Lorem, ipsum dolor sit amet consectetur adipisicing.</p> 
+<p class="descriptionText">Lorem, ipsum dolor sit amet consectetur adipisicing.</p> 
+<p class="descriptionText">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+
+<script>
+    const descriptionElClass = document.querySelectorAll('.descriptionText');
+    descriptionElClass.forEach(element => {   
+        element.textContent = 'Измененный текст' ;
+        console.log(element);
+    });
+</script>
+
+<!-- 5 -->
+ <h1> CHANGE PARGRAPH</h1>
+<p class="descriptionParagraph">Lorem, ipsum dolor sit amet consectetur adipisicing.</p> 
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p> 
+<p class="descriptionParagraph">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p> 
+
+<script>
+    const descriptionClass = document.querySelectorAll('.descriptionParagraph');
+    descriptionClass.forEach(element => {   
+        element.textContent = 'Новый текст' ;
+        console.log(element);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+<!-- 6 -->
+<h1>ADD TEXT</h1>
+
+<button class="btnAdd">Добавить текст</button>
+<div class ="content"></div>
+
+<script>
+const contentEl = document.querySelector('.content');
+const CreatText = document.querySelector('.btnAdd');
+
+CreatText.addEventListener('click', function (e) {
+    const headingEl = document.createElement('h2');
+    headingEl.textContent = 'Новый текст';
+    contentEl.appendChild(headingEl);
+});
+</script>
+
+
+<!-- 7 -->
+ <h1>REMOVE TEXT</h1>
+
+<p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eligendi.</p>
+<p class="descriptionRemove">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eligendi.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eligendi.</p>
+<p class="descriptionRemove">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eligendi.</p>
+
+<button class="btn-remove">Удалить текст</button>
+
+<script>
+    const btnRemoveEl = document.querySelector('.btn-remove');
+
+    btnRemoveEl.addEventListener('click', function (e) {
+        const descriptionRemoveEl = document.querySelector('.descriptionRemove');
+        descriptionRemoveEl.remove();
+    });
+</script>
+
+
+
+
+</body>
+</html>
