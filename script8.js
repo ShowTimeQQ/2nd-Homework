@@ -103,3 +103,23 @@ function sayHi (name) {
 
 delayForSecond(() => sayHi('Глеб'));
 
+
+// 6 game
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function game6() {
+  const rgb = (`rgb(${getRandomInt(0, 255)} ${getRandomInt(0, 255)} ${getRandomInt(0, 255)})`);
+
+  const block = document.querySelector('.gap-games');
+
+  block.style.backgroundColor = rgb ;
+
+  
+}
+
+

@@ -1,4 +1,4 @@
-@media ( max-width: 767px  ) {
+@media ( max-width: 1068px  ) {
     .center {
         padding-left: 16px;
         padding-right: 16px;    
@@ -56,10 +56,32 @@ margin-right: 36px;
     }
 }
 
+.header-text {
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 700;
+line-height: 17.6px;
+letter-spacing: 0.04em;
+text-align: left;
+padding: 17px;
+
+}
+
+.star-running {
+width: 19.34px;
+height: 19.34px;
+padding: 17px;
+
+
+}
 
 .strip-bottom {
+width: 3260px;
 height: 51px; 
+display: flex;
+gap: 27px;
 }
+
 .top{
 top: 700px;
 background: rgba(32, 32, 39, 1);
