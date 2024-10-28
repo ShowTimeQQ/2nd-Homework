@@ -50,7 +50,7 @@ function game3() {
     return str.split('').reverse('').join('')
   
 }
- 
+
 // Game 4 
 function Victorina() {
     const quiz = [
@@ -87,6 +87,11 @@ function Victorina() {
 }
 
 //Game 5
+function computerPlay() {
+    const options = ["камень", "ножницы", "бумага"];
+    const randomIndex = Math.floor(Math.random() * 3);
+    return options[randomIndex];
+  }
 
 function game5 () {
     const player = String(prompt("камень , ножницы или бумага"));
@@ -107,7 +112,7 @@ function game5 () {
           alert( "Компьютер победил!");
         }
     }
-
+console.log(game5());
     // Game 6 
 
 function game6() {
