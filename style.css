@@ -103,11 +103,11 @@ html {
 }
 
 .strip-bottom {
-  width: 320%;
+  width: 200%;
   display: flex;
   gap: 51px;
   height: 80px;
-  animation: scrloll-Left-Rirht 20s linear infinite;
+  animation: scrloll-Left-Rirht 10s linear infinite;
 }
 
 @keyframes scrloll-Left-Rirht {
@@ -126,6 +126,7 @@ html {
   letter-spacing: 0.04em;
   text-align: left;
   padding-top: 27px;
+  text-wrap: nowrap;
 }
 
 .star-running {
@@ -441,10 +442,13 @@ html {
     padding: 17px;
   }
   .strip-bottom {
-    width: 3260px;
+    width: 200%;
     height: 51px;
     display: flex;
     gap: 27px;
+  }
+  .header-text {
+    text-wrap: nowrap;
   }
   .top {
     top: 700px;
