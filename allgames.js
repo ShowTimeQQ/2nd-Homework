@@ -46,8 +46,8 @@ if (!isNaN(userAnswer) && userAnswer === j) {
 //Game 3
 
 function game3() {
-    let str = prompt('Введите текст');
-    return str.split('').reverse('').join('')
+  let str = prompt('Введите текст');
+   alert( str.split('').reverse('').join(''));
   
 }
 
@@ -83,7 +83,7 @@ function Victorina() {
             alert('Не правильно!');
         }
     }
-    alert('Кол-во правильгых ответов ' + count);
+    alert('Кол-во правильных ответов ' + count);
 }
 
 //Game 5
@@ -94,7 +94,7 @@ function computerPlay() {
   }
 
 function game5 () {
-    const player = String(prompt("камень , ножницы или бумага"));
+    const player = prompt("камень , ножницы или бумага");
     const computer = computerPlay(); 
     alert(`Ответ компьютера: ${computer}`);
 
@@ -112,7 +112,7 @@ function game5 () {
           alert( "Компьютер победил!");
         }
     }
-console.log(game5());
+
     // Game 6 
 
 function game6() {
