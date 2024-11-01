@@ -46,11 +46,11 @@ if (!isNaN(userAnswer) && userAnswer === j) {
 //Game 3
 
 function game3() {
-    let str = prompt('Введите текст');
-    return str.split('').reverse('').join('')
+  let str = prompt('Введите текст');
+   alert( str.split('').reverse('').join(''));
   
 }
- 
+
 // Game 4 
 function Victorina() {
     const quiz = [
@@ -83,13 +83,18 @@ function Victorina() {
             alert('Не правильно!');
         }
     }
-    alert('Кол-во правильгых ответов ' + count);
+    alert('Кол-во правильных ответов ' + count);
 }
 
 //Game 5
+function computerPlay() {
+    const options = ["камень", "ножницы", "бумага"];
+    const randomIndex = Math.floor(Math.random() * 3);
+    return options[randomIndex];
+  }
 
 function game5 () {
-    const player = String(prompt("камень , ножницы или бумага"));
+    const player = prompt("камень , ножницы или бумага");
     const computer = computerPlay(); 
     alert(`Ответ компьютера: ${computer}`);
 

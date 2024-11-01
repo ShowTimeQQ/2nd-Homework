@@ -1,30 +1,3 @@
-function computerPlay() {
-    const options = ["камень", "ножницы", "бумага"];
-    const randomIndex = Math.floor(Math.random() * 3);
-    return options[randomIndex];
-  }
-  
-  function game5 () {
-    const player = String(prompt("камень , ножницы или бумага"));
-    const computer = computerPlay(); 
-    alert(`Ответ компьютера: ${computer}`);
-
-        const winner = {
-          камень: "ножницы",
-          бумага: "камень",
-          ножницы: "бумага",
-        };
-
-        if (player === computer) {
-         alert( "Ничья!");
-        } else if (winner[player] === computer) {
-         alert( "Вы победили!");
-        } else {
-          alert( "Компьютер победил!");
-        }
-    }
-    
-
 
   //1
 
@@ -102,24 +75,5 @@ function sayHi (name) {
 
 
 delayForSecond(() => sayHi('Глеб'));
-
-
-// 6 game
-
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function game6() {
-  const rgb = (`rgb(${getRandomInt(0, 255)} ${getRandomInt(0, 255)} ${getRandomInt(0, 255)})`);
-
-  const block = document.querySelector('.gap-games');
-
-  block.style.backgroundColor = rgb ;
-
-  
-}
 
 

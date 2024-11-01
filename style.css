@@ -103,11 +103,11 @@ html {
 }
 
 .strip-bottom {
-  width: 320%;
+  width: 200%;
   display: flex;
   gap: 51px;
   height: 80px;
-  animation: scrloll-Left-Rirht 20s linear infinite;
+  animation: scrloll-Left-Rirht 10s linear infinite;
 }
 
 @keyframes scrloll-Left-Rirht {
@@ -126,6 +126,7 @@ html {
   letter-spacing: 0.04em;
   text-align: left;
   padding-top: 27px;
+  text-wrap: nowrap;
 }
 
 .star-running {
@@ -165,11 +166,11 @@ html {
   gap: 32px;
 }
 
-.about-g {
+.about-collection {
   padding-top: 94px;
 }
 
-.title-g {
+.title-minigame {
   width: 314px;
   height: 78px;
   font-family: Montserrat;
@@ -181,7 +182,7 @@ html {
   margin-bottom: 24px;
 }
 
-.text-bott {
+.text-description {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 400;
@@ -191,7 +192,7 @@ html {
   margin-bottom: 72px;
 }
 
-.game-1 {
+.one {
   height: 473px;
   background-color: #fff;
   gap: 0px;
@@ -199,7 +200,7 @@ html {
   border-radius: 30px 30px 30px 30px;
 }
 
-.game-2 {
+.two {
   height: 512px;
   background-color: #fff;
   gap: 0px;
@@ -207,7 +208,7 @@ html {
   border-radius: 30px 30px 30px 30px;
 }
 
-.game-4 {
+.four {
   height: 551px;
   background-color: #fff;
   gap: 0px;
@@ -342,7 +343,6 @@ html {
 .button-mini {
   width: 247px;
   height: 66px;
-  padding: 16px 28px 16px 28px;
   gap: 10px;
   border-radius: 60px;
   background-color: black;
@@ -353,6 +353,11 @@ html {
   line-height: 34.01px;
   text-align: center;
   color: #fff;
+}
+
+.button-mini:hover {
+  background-color: #fff;
+  color: black;
 }
 
 .info {
@@ -374,7 +379,105 @@ html {
   padding-bottom: 61px;
 }
 
-@media (max-width: 1068px) {
+@media (max-width: 1024px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .fon {
+    background-color: rgb(225, 255, 143);
+    background-image: url(./img/starformobile.png), url(./img/star\ top.png), url(./img/star\ bottom.png);
+    background-repeat: no-repeat;
+    background-position: 90% 0%, 5% 5%, 70% 80%;
+  }
+  .title {
+    font-size: 42px;
+  }
+  .header-text {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+  .star-running {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .button_go {
+    margin-top: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+  }
+  .mid {
+    padding-top: 30px;
+  }
+  .title-minigame {
+    font-size: 48px;
+  }
+  .text-description {
+    font-size: 18px;
+  }
+  .box-top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+  .box-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .one {
+    width: 380px;
+  }
+  .two {
+    width: 380px;
+  }
+  .four {
+    width: 380px;
+  }
+  .game-box {
+    background-image: url(./img/Star\ 1.png), url(./img/star\ game.png);
+    background-repeat: no-repeat;
+    background-position: 75% 10%, 60% 52%;
+  }
+  .cart1 {
+    height: 360px;
+  }
+  .cart2 {
+    height: 360px;
+  }
+  .cart3 {
+    height: 360px;
+  }
+  .cart4 {
+    height: 360px;
+  }
+  .img-mini {
+    width: 360px;
+    height: 360px;
+  }
+  .text-gamemini {
+    font-size: 36px;
+    margin-top: 8px;
+  }
+  .text-random {
+    font-size: 24px;
+  }
+  .button-mini {
+    margin: 30px;
+    height: 40px;
+  }
+  .top {
+    height: 2600px;
+    background-position: 92% 2%, 92% 100%;
+  }
+}
+@media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -386,7 +489,7 @@ html {
     padding-bottom: 144px;
   }
   .mid {
-    padding-top: 45px;
+    padding-top: 60px;
     display: flex;
     flex-direction: row;
   }
@@ -398,7 +501,7 @@ html {
     text-align: center;
   }
   .text {
-    height: 60px;
+    height: 45px;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
@@ -408,6 +511,8 @@ html {
     padding-right: 24px;
   }
   .button_go {
+    padding-top: 16px;
+    padding-bottom: 16px;
     gap: 10px;
     border-radius: 60px;
     border: 1px 0px 0px 0px;
@@ -434,14 +539,15 @@ html {
     letter-spacing: 0.04em;
     text-align: left;
     padding: 17px;
+    text-wrap: nowrap;
   }
   .star-running {
     width: 19.34px;
     height: 19.34px;
-    padding: 17px;
+    padding-top: 16px;
   }
   .strip-bottom {
-    width: 3260px;
+    width: 200%;
     height: 51px;
     display: flex;
     gap: 27px;
@@ -550,6 +656,7 @@ html {
     line-height: 22.67px;
     text-align: center;
     color: #fff;
+    margin: 0;
     margin-top: 32px;
   }
   .button-mini2 {

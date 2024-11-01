@@ -1,0 +1,104 @@
+@media ( max-width: 1024px  ) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;    
+
+}
+
+.fon {
+    background-color: rgba(225, 255, 143, 1);
+    background-image: url(./img/starformobile.png), url(./img/star\ top.png),url(./img/star\ bottom.png);
+    background-repeat: no-repeat;
+    background-position: 90% -0%, 5% 5%, 70% 80%;
+}
+.title {
+    font-size: 42px;
+}
+.header-text {
+font-size: 24px;
+padding-top: 20px;
+}
+.star-running {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.text {
+    font-size: 20px;
+}
+.button_go {
+    margin-top: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+.mid {
+    padding-top: 30px;
+}
+.title-minigame {
+    font-size: 48px;
+}
+.text-description {
+    font-size: 18px;
+
+}
+.box-top {
+    display:flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 16px;
+}
+.box-bottom {
+    display:flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+.one {
+    width: 380px ;
+}
+.two {
+    width: 380px;
+}
+.four {
+width: 380px;
+}
+.game-box {
+    background-image: url(./img/Star\ 1.png), url(./img/star\ game.png);
+    background-repeat: no-repeat;
+    background-position: 75% 10%, 60% 52%;
+        
+}
+.cart1 {
+    height: 360px;
+}
+.cart2 {
+    height: 360px;
+}
+.cart3 {
+    height: 360px;
+}
+.cart4 {
+    height: 360px;
+}
+.img-mini {
+    width: 360px;
+    height: 360px;
+} 
+.text-gamemini {
+    font-size: 36px;
+    margin-top: 8px;
+    
+}
+.text-random {
+    font-size: 24px;
+}
+.button-mini {
+   
+    margin: 30px;
+    height: 40px;
+}
+.top {
+height: 2600px;
+background-position: 92% 2%, 92% 100%;
+}
+}
